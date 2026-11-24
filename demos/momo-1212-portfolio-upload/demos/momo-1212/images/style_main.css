@@ -1,0 +1,339 @@
+@charset "big5";
+/* CSS Document */
+/*回版頭*/
+@font-face{ font-family:comingsoon; src:url(comimgsoon_font.ttf);}
+
+#gotop { display: none; position: fixed; padding: 10px 10px 3px 10px; right: 30px; bottom:6%; font: 12px/30px Verdana; background: #fff url(gotopBtnBk.png) no-repeat center 7px; color: #000; cursor: pointer; z-index: 5; border-radius:50%;}
+#gotop { filter: alpha(opacity=100); -moz-opacity:1; opacity:1} /*背景透明*/
+/*基本*/
+body{margin:0;padding:0; background-color:#c60038;}
+
+/*全BOX版面*/	
+.wrapper{position:relative;width:100%;text-align:left;font-family:"Century Gothic", "微軟正黑體", sans-serif; background: url(bg.jpg) center top no-repeat; }	
+.wrapper img{border:0;vertical-align:top;}	
+.mainarea{display:block;width:1220px;margin:50px auto 50px auto;padding:0; position:relative;}	
+	
+/*Header選單-PC*/	
+/*動畫*/
+ @keyframes fade-in {  
+         0% {opacity: 0;}
+         40% {opacity: 0;} 
+         100% {opacity: 1;}
+     }  
+@-webkit-keyframes fade-in {
+         0% {opacity: 0;}  
+         40% {opacity: 0;}  
+         100% {opacity: 1;}  
+     } 
+	 	
+.fixbox{width:100%; height:50px; position:fixed; top:0; left:0;background-color:rgba(0,0,0,0.5);animation:fade-in;  animation-duration: 2s; -webkit-animation:fade-in 1.5s;}	
+.fixbox ul{ width:1220px; margin:0 auto;}
+.fixbox ul li { float:left;}
+.fixbox ul li a{ display:block;}
+.fixbox ul li .txt{display:block; width:100px; height:50px; text-align:center; line-height:50px; font-size:18px; color:#FFF; font-family:"Century Gothic", "微軟正黑體", sans-serif; background:url(a_bg.png) center center no-repeat;}
+.fixbox ul li .txt:hover{color:#6daaf6;}
+.fixbox ul li:nth-child(5) a{color:#ffff00;}
+.fixbox ul li:nth-child(5) a:hover{color:#ffff00;}
+.fixbox ul li:nth-child(8) a{ background-image:none;}
+
+/*關閉*/
+.for_phone{ display:none;}
+
+
+/*標題區塊*/
+.mainarea .title{ display:block; padding:0; margin:0 auto; position:relative;font-family:"Century Gothic", "微軟正黑體", sans-serif;}
+.mainarea .title p{ position:absolute; right:84px; bottom:40px;width:110px;}
+.mainarea .title p a{ display:block; padding:3% 10%; font-size:22px; color:#000; background-color:#ff5a00; color:#fff; font-weight:bold; border-radius:50px;}
+.mainarea .title p a:hover{ color:#fffa8c; transform:translateY(3px)}
+
+/*投票區塊*/
+.mainarea .vote{display:block; padding:0; margin:-6px 25px; width:1170px; background-color:#fff;font-family:"Century Gothic", "微軟正黑體", sans-serif;}
+
+/*頁籤區塊*/
+.mainarea .vote .bookmark{display:block; padding:0; margin:0 auto; height:180px; background:url(bookmark_bg.png) center top no-repeat; position:relative;}
+.mainarea .vote .bookmark ul{display:block; padding:0; margin:0 auto; overflow:hidden; position:absolute; top:37px; left:27px;}
+.mainarea .vote .bookmark ul li{ float:left; margin-left:47px;}
+.mainarea .vote .bookmark ul li:nth-child(1){ margin-left:0px;}
+.mainarea .vote .bookmark ul li:nth-child(6){ display:none;}
+.mainarea .vote .bookmark ul li a{ display:block; padding:0; margin:0 auto;  
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .vote .bookmark ul li a:hover{-webkit-transform: scale(0.9);transform: scale(0.9);}
+
+/*第一戰*/
+.mainarea .vote .voteBox1{display:block; padding:0; margin:0 auto 30px auto;background-color:#fff; }
+.mainarea .vote .voteBox1 h1{ display:block; padding:0; margin:0 auto; font-size:36px; text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox1 h1 span{display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:180px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .vote .voteBox1 h1 dd{ display:inline-block; color:#ff7f00}
+.mainarea .vote .voteBox1 .content1{padding:2%; position:relative;}
+.mainarea .vote .voteBox1 .content1 ul{ overflow:hidden; border-radius:10px;border:2px solid #c60038; }
+.mainarea .vote .voteBox1 .content1 ul li{ float:left; padding:2% 0; width:25%; position:relative;}
+.mainarea .vote .voteBox1 .content1 ul li:after{content: ""; display: block;position: absolute; right:0;top:50px;width: 1px; height:300px; background-color: #dcdcdc;}
+.mainarea .vote .voteBox1 .content1 ul li:nth-child(4):after{ display:none;}
+.mainarea .vote .voteBox1 .content1 ul li:nth-child(8):after{ display:none;}
+.mainarea .vote .voteBox1 .content1 ul li .box{ padding:2%;}
+.mainarea .vote .voteBox1 .content1 ul li .box .pic{ position:relative;
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .vote .voteBox1 .content1 ul li .box .pic:hover{-webkit-transform: scale(0.95);transform: scale(0.95);}
+.mainarea .vote .voteBox1 .content1 ul li .box .pic .win{ position:absolute; top:0; left:0;}
+.mainarea .vote .voteBox1 .content1 ul li .box .pic img{ width:100%; height:auto;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt{ text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h2{ font-size:30px; line-height:34px;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h3{font-size:22px;line-height:34px;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4{font-size:23px;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 a{ display:inline-block; padding:2%; margin:0 auto; color:#fff; width:60%; border-radius:50px;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 a:hover{background-color:#000;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .blue{ background-color:#0000c6;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .red{ background-color:#c60038;}
+
+/*支持顏色*/
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .stand{ background-color:#ffa100;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .stand:hover{ background-color:#ffa100;}
+/*不支持顏色*/
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .nostand{ background-color:#848484;}
+.mainarea .vote .voteBox1 .content1 ul li .box .txt h4 .nostand:hover{ background-color:#848484;}
+
+/*coming soon*/
+.mainarea .vote .voteBox1 .content1 .black{ position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); text-align: center;}
+.mainarea .vote .voteBox1 .content1 .black img{ width:auto; height:100%;}
+.mainarea .vote .voteBox1 .content1 .black p{ color:#FFF; font-size:100px; text-align:center; vertical-align:middle; position:absolute; left:10%; top:50%; right:0; bottom:0; margin-top:-40px; text-transform:uppercase; font-family:comingsoon; letter-spacing:10px; font-weight:bold; transform:rotate(-8deg);}
+
+/*第二戰*/
+.mainarea .vote .voteBox2{display:block; padding:0; margin:0 auto 30px auto;background-color:#fff; }
+.mainarea .vote .voteBox2 h1{ display:block; padding:0; margin:0 auto; font-size:36px; text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox2 h1 span{display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:180px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .vote .voteBox2 h1 dd{ display:inline-block; color:#ff7f00}
+.mainarea .vote .voteBox2 .content2{padding:2%; position:relative;}
+.mainarea .vote .voteBox2 .content2 ul{ overflow:hidden; border-radius:10px;border:2px solid #0000c6; }
+.mainarea .vote .voteBox2 .content2 ul li{ float:left; padding:2% 0; width:16.66%; position:relative;}
+.mainarea .vote .voteBox2 .content2 ul li:after{content: ""; display: block;position: absolute; right:0;top:50px;width: 1px; height:120px; background-color: #dcdcdc;}
+.mainarea .vote .voteBox2 .content2 ul li:nth-child(6):after{display: none;}
+.mainarea .vote .voteBox2 .content2 ul li .box{ padding:2%;}
+.mainarea .vote .voteBox2 .content2 ul li .box .pic{ position:relative;
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.mainarea .vote .voteBox2 .content2 ul li .box .pic .win{ position:absolute; top:0; left:0;}
+.mainarea .vote .voteBox2 .content2 ul li .box .pic img{ width:100%; height:auto;}
+.mainarea .vote .voteBox2 .content2 ul li .box .pic:hover{-webkit-transform: scale(0.95);transform: scale(0.95);}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt{ text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h3{font-size:18px;line-height:28px;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4{font-size:20px;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 a{ display:inline-block; padding:2%; margin:0 auto; color:#fff; width:60%; border-radius:50px;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 a:hover{background-color:#000;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .blue{ background-color:#0000c6;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .red{ background-color:#c60038;}
+
+/*支持顏色*/
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .stand{ background-color:#ffa100;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .stand:hover{background-color:#ffa100;}
+/*不支持顏色*/
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .nostand{ background-color:#848484;}
+.mainarea .vote .voteBox2 .content2 ul li .box .txt h4 .nostand:hover{ background-color:#848484;}
+
+/*coming soon*/
+.mainarea .vote .voteBox2 .content2 .black{ position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); text-align: center;}
+.mainarea .vote .voteBox2 .content2 .black img{ width:auto; height:100%;}
+.mainarea .vote .voteBox2 .content2 .black p{ color:#FFF; font-size:100px; text-align:center; vertical-align:middle; position:absolute; left:5%; top:50%; right:0; bottom:0; margin-top:-40px; text-transform:uppercase;font-family:comingsoon; letter-spacing:10px; font-weight:bold; transform:rotate(-8deg);}
+
+/*第三戰*/
+.mainarea .vote .voteBox3{display:block; padding:0; margin:0 auto 30px auto;background-color:#fff; }
+.mainarea .vote .voteBox3 h1{ display:block; padding:0; margin:0 auto; font-size:36px; text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox3 h1 span{display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:180px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .vote .voteBox3 h1 dd{ display:inline-block; color:#ff7f00}
+.mainarea .vote .voteBox3 .content3{padding:2%; position:relative;}
+.mainarea .vote .voteBox3 .content3 ul{ overflow: hidden;}
+.mainarea .vote .voteBox3 .content3 ul li{ float:left; padding:2% 0; width:49%; overflow: hidden;position:relative;}
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(1){margin-right:1%;}
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(2){margin-left:1%;}
+.mainarea .vote .voteBox3 .content3 ul li .box{ padding-bottom:2%; border-radius: 10px; border: 2px solid #000;overflow: hidden; text-align: center; font-weight: bold;}
+.mainarea .vote .voteBox3 .content3 ul li .box h1{ display: block; height: 100px; line-height: 100px; padding: 0; margin: 0 auto; font-size: 55px; color: #fff; background: url(halo_bg.png) center top no-repeat; background-size: 100% 100%; background-color:#000;}
+.mainarea .vote .voteBox3 .content3 ul li .box .pic{ position:relative;
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .vote .voteBox3 .content3 ul li .box .pic .win{ position:absolute; top:0; left:0;}
+.mainarea .vote .voteBox3 .content3 ul li .box .pic img{ width: 100%; height: auto;}
+.mainarea .vote .voteBox3 .content3 ul li .box .pic:hover{-webkit-transform: scale(0.95);transform: scale(0.95);}
+.mainarea .vote .voteBox3 .content3 ul li .box h3{font-size:24px;line-height:34px;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4{font-size:28px;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 a{display:inline-block; padding:2%; margin:0 auto; color:#fff; width:50%; border-radius:50px;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 a:hover{background-color:#000;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .blue{ background-color:#0000c6;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .red{ background-color:#c60038;}
+
+/*支持顏色*/
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .stand{ background-color:#ffa100;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .stand:hover{ background-color:#ffa100;}
+/*不支持顏色*/
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .nostand{ background-color:#848484;}
+.mainarea .vote .voteBox3 .content3 ul li .box h4 .nostand:hover{ background-color:#848484;}
+
+/*coming soon*/
+.mainarea .vote .voteBox3 .content3 .black{ position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); text-align: center;}
+.mainarea .vote .voteBox3 .content3 .black img{ width:auto; height:100%;}
+.mainarea .vote .voteBox3 .content3 .black p{ color:#FFF; font-size:100px; text-align:center; vertical-align:middle; position:absolute; left:10%; top:50%; right:0; bottom:0; margin-top:-40px; text-transform:uppercase; font-family:comingsoon; letter-spacing:10px;font-weight:bold; transform:rotate(-8deg);}
+
+
+/*區塊變色*/
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(1) .box{ border: 2px solid #0000c6;}
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(1) .box h1{ background-color: #0000c6;}
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(2) .box{ border: 2px solid #c60038;}
+.mainarea .vote .voteBox3 .content3 ul li:nth-child(2) .box h1{ background-color: #c60038;}
+
+/*第四戰*/
+.mainarea .vote .voteBox4{display:block; padding:0; margin:0 auto 30px auto;background-color:#fff; }
+.mainarea .vote .voteBox4 h1{ display:block; padding:0; margin:0 auto; font-size:36px; text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox4 h1 span{display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:180px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .vote .voteBox4 h1 dd{ display:inline-block; color:#ff7f00}
+.mainarea .vote .voteBox4 .content4{padding:2%; position:relative;}
+.mainarea .vote .voteBox4 .content4 ul{ margin-top: 1%; overflow:hidden; border-radius:10px;border:2px solid #000; }
+.mainarea .vote .voteBox4 .content4 ul h1{display: block; height: 100px; line-height: 100px; padding: 0; margin: 0 auto; font-size: 55px; color: #fff; background: url(halo_bg.png) center top no-repeat; background-size: 100% 100%; background-color:#000;}
+.mainarea .vote .voteBox4 .content4 ul li{ float:left; padding:2% 0; width:25%; position:relative;}
+.mainarea .vote .voteBox4 .content4 ul li:after{content: ""; display: block;position: absolute; right:0;top:50px;width: 1px; height:300px; background-color: #dcdcdc;}
+.mainarea .vote .voteBox4 .content4 ul li:nth-child(5):after{ display:none;}
+.mainarea .vote .voteBox4 .content4 ul li .box{ padding:2%;}
+.mainarea .vote .voteBox4 .content4 ul li .box .pic{ position:relative;
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .vote .voteBox4 .content4 ul li .box .pic .win{ position:absolute; top:0; left:0;}
+.mainarea .vote .voteBox4 .content4 ul li .box .pic:hover{-webkit-transform: scale(0.95);transform: scale(0.95);}
+.mainarea .vote .voteBox4 .content4 ul li .box .pic img{ width:100%; height:auto;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt{ text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h2{ font-size:30px; line-height:34px;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h3{font-size:22px;line-height:34px;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4{font-size:23px;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 a{ display:inline-block; padding:2%; margin:0 auto; color:#fff; width:60%; border-radius:50px;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 a:hover{background-color:#000;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .blue{ background-color:#0000c6;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .red{ background-color:#c60038;}
+
+/*支持顏色*/
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .stand{ background-color:#ffa100;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .stand:hover{ background-color:#ffa100;}
+/*不支持顏色*/
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .nostand{ background-color:#848484;}
+.mainarea .vote .voteBox4 .content4 ul li .box .txt h4 .nostand:hover{ background-color:#848484;}
+
+/*coming soon*/
+.mainarea .vote .voteBox4 .content4 .black{ position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); text-align: center;}
+.mainarea .vote .voteBox4 .content4 .black img{ width:100%; height:100%;}
+.mainarea .vote .voteBox4 .content4 .black p{ color:#FFF; font-size:100px; text-align:center; vertical-align:middle; position:absolute; left:10%; top:50%; right:0; bottom:0; margin-top:-40px; text-transform:uppercase;font-family:comingsoon; letter-spacing:10px; font-weight:bold; transform:rotate(-8deg);}
+
+/*區塊變色*/
+.mainarea .vote .voteBox4 .content4 ul:nth-child(1){border:2px solid #0000c6;}
+.mainarea .vote .voteBox4 .content4 ul:nth-child(1) h1{ background-color:#0000c6;}
+.mainarea .vote .voteBox4 .content4 ul:nth-child(2){border:2px solid #c60038;}
+.mainarea .vote .voteBox4 .content4 ul:nth-child(2) h1{ background-color:#c60038;}
+
+/*第五戰*/
+.mainarea .vote .voteBox5{display:block; padding:0; margin:0 auto 30px auto;background-color:#fff; }
+.mainarea .vote .voteBox5 h1{ display:block; padding:0; margin:0 auto; font-size:36px; text-align:center; font-weight:bold;}
+.mainarea .vote .voteBox5 h1 span{display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:180px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .vote .voteBox5 h1 dd{ display:inline-block; color:#ff7f00}
+.mainarea .vote .voteBox5 .content5{padding:2%; position:relative;}
+.mainarea .vote .voteBox5 .content5 ul{ overflow: hidden;}
+.mainarea .vote .voteBox5 .content5 ul li{ float:left; padding:2% 0; width:49%; overflow: hidden;position:relative;}
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(1){margin-right:1%;}
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(2){margin-left:1%;}
+.mainarea .vote .voteBox5 .content5 ul li .box{ padding-bottom:2%; border-radius: 10px; border: 2px solid #000;overflow: hidden; text-align: center; font-weight: bold;}
+.mainarea .vote .voteBox5 .content5 ul li .box h1{ display: block; height: 100px; line-height: 100px; padding: 0; margin: 0 auto; font-size: 55px; color: #fff; background: url(halo_bg.png) center top no-repeat; background-size: 100% 100%; background-color:#000;}
+.mainarea .vote .voteBox5 .content5 ul li .box .pic{ position:relative;
+-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .vote .voteBox5 .content5 ul li .box .pic .win{ position:absolute; top:0; left:0;}
+.mainarea .vote .voteBox5 .content5 ul li .box .pic img{ padding: 2%; width:96%; height: auto;}
+.mainarea .vote .voteBox5 .content5 ul li .box .pic:hover{-webkit-transform: scale(0.95);transform: scale(0.95);}
+.mainarea .vote .voteBox5 .content5 ul li .box h3{font-size:24px;line-height:34px;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4{font-size:28px;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 a{display:inline-block; padding:2%; margin:0 auto; color:#fff; width:50%; border-radius:50px;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 a:hover{background-color:#000;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .blue{ background-color:#0000c6;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .red{ background-color:#c60038;}
+
+/*支持顏色*/
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .stand{ background-color:#ffa100;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .stand:hover{ background-color:#ffa100;}
+/*不支持顏色*/
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .nostand{ background-color:#848484;}
+.mainarea .vote .voteBox5 .content5 ul li .box h4 .nostand:hover{ background-color:#848484;}
+
+/*coming soon*/
+.mainarea .vote .voteBox5 .content5 .black{ position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.75); text-align: center;}
+.mainarea .vote .voteBox5 .content5 .black img{ width:auto; height:100%;}
+.mainarea .vote .voteBox5 .content5 .black p{ color:#FFF; font-size:100px; text-align:center; vertical-align:middle; position:absolute; left:10%; top:50%; right:0; bottom:0; margin-top:-40px; text-transform:uppercase;font-family:comingsoon; letter-spacing:10px; font-weight:bold; transform:rotate(-8deg);}
+
+/*區塊變色*/
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(1) .box{ border: 2px solid #0000c6;}
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(1) .box h1{ background-color: #0000c6;}
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(2) .box{ border: 2px solid #c60038;}
+.mainarea .vote .voteBox5 .content5 ul li:nth-child(2) .box h1{ background-color: #c60038;}
+
+
+
+
+
+/*注意事項*/
+.notes{ width:1190px; height:auto; padding:40px 1.8em; background:#000; color:#fff; margin:0 auto; text-align:left;}
+.notes h4{ font:bold 55px/36px "微軟正黑體", "Microsoft JhengHei", Arial; margin:0 0 30px 0;}
+.notes h3{ font:bold 40px/36px "微軟正黑體", "Microsoft JhengHei", Arial; margin:0 0 10px 0;}
+.notes h3 span{font-size:20px;}
+.notes p{font:18px/1.5em "微軟正黑體", "Microsoft JhengHei", Arial; margin:10px 0 10px 15px;}
+.notes p span{ color:#ffba00;}
+.notes ul{ margin-left:10px;}
+.notes ul li{font:18px/1.5em "微軟正黑體", "Microsoft JhengHei", Arial; margin:10px 0 10px 15px; list-style-type:decimal;}
+.notes ul li a{ color:#FFF; text-decoration:underline;}
+.notes ul li a:hover{ color:#FF0;}
+
+.notes table{ padding:0; margin:1% auto; text-align:center; border:2px solid #ffba00; font-size:16px; line-height:1.5; font-family:"Microsoft JhengHei", "微軟正黑體", Arial, sans-serif, "Century Gothic";}
+.notes table tr:nth-child(1) td{ font-size:24px; font-weight:bold; color:#ffba00;}
+.notes table tr{border:1px solid #ffba00;}
+.notes table td{border:1px solid #ffba00;}
