@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+/*回版頭*/
+#gotop { display: none; position: fixed; padding: 10px 10px 3px 10px; right: 30px; bottom:6%; font: 12px/30px Verdana; background: #fff url(gotopBtnBk.png) no-repeat center 7px; color: #000; cursor: pointer; z-index: 5; border-radius:50%;;}
+#gotop { filter: alpha(opacity=100); -moz-opacity:1; opacity:1} /*背景透明*/
+/*基本*/
+body{margin:0;padding:0;  background:url(bg_bottom.jpg) fixed bottom no-repeat;background-color:#00024c;}
+
+/*全BOX版面*/	
+.wrapper{position:relative;width:100%;text-align:left;font-family:"Century Gothic", "微軟正黑體", sans-serif; background: url(bg.png) center top no-repeat; }	
+.wrapper img{border:0;vertical-align:top;}	
+.mainarea{display:block;width:1220px;margin:0px auto 25px auto;padding:0; position:relative;}	
+	
+/*Header選單-PC*/	
+/*動畫*/
+ @keyframes fade-in {  
+         0% {opacity: 0;}
+         40% {opacity: 0;} 
+         100% {opacity: 1;}
+     }  
+@-webkit-keyframes fade-in {
+         0% {opacity: 0;}  
+         40% {opacity: 0;}  
+         100% {opacity: 1;}  
+     } 
+	 	
+.fixbox{width:100%; height:50px; position:fixed; top:0; left:0;background-color:rgba(0,0,0,0.5);animation:fade-in;  animation-duration: 2s; -webkit-animation:fade-in 1.5s;}	
+.fixbox ul{ width:1220px; margin:0 auto;}
+.fixbox ul li { float:left;}
+.fixbox ul li a{ display:block;}
+.fixbox ul li .txt{display:block; width:100px; height:50px; text-align:center; line-height:50px; font-size:18px; color:#FFF; font-family:"Century Gothic", "微軟正黑體", sans-serif; background:url(a_bg.png) center center no-repeat;}
+.fixbox ul li .txt:hover{color:#6daaf6;}
+.fixbox ul li:nth-child(6) a{color:#ffff00;}
+.fixbox ul li:nth-child(6) a:hover{color:#ffff00;}
+.fixbox ul li:nth-child(9) a{ background-image:none;}
+
+/*關閉*/
+
+.for_phone{ display:none;}
+
+
+/*購物PK大賽錨點區塊*/
+.mainarea .pkBlockBox{ display:none;}
+.mainarea .pkBlockBox .pkBlockBtn{}
+.mainarea .pkBlockBox .pkBlockBtn ul{}
+.mainarea .pkBlockBox .pkBlockBtn ul li{}
+
+
+/*購物PK大賽區塊*/
+.mainarea .shoppingPk{ display:block; padding:20px 50px 50px 50px; margin:0 25px; width:1070px; background-color:#fff; font-family:"Microsoft JhengHei", "微軟正黑體", Arial, sans-serif, "Century Gothic"; font-weight:bold; overflow:hidden;}
+.mainarea .shoppingPk .box{display:block; padding:0; margin:0 auto 100px auto; overflow:hidden;}
+.mainarea .shoppingPk .box h1{ display:block; padding:0; margin:0 auto 1% auto; font-size:36px; text-align:center;}
+.mainarea .shoppingPk .box h1 span{ display:inline-block; position:relative; top:-4px; padding:0; margin:0 1% 0 auto; width:110px; font-size:26px; line-height:40px; border-radius:100px; color:#fff; background-color:#000;}
+.mainarea .shoppingPk .box h1 dd{ display:inline-block; color:#ff7f00;}
+.mainarea .shoppingPk .box p{ padding:0 40px; margin:0 auto 2% auto; font-size:16px; line-height:22px; text-align:center;}
+
+.mainarea .shoppingPk .box .pkBlock{ display:block; padding:0; margin:0 13px 0 auto; float:left; width:520px; border:1px solid #ff00c4; border-radius:10px; overflow:hidden;}
+.mainarea .shoppingPk .box .pkBlock h3{ display:block; padding:0; margin:0 auto; background-color:#ff00c4;}
+.mainarea .shoppingPk .box .pkBlock ul{ overflow:hidden;}
+.mainarea .shoppingPk .box .pkBlock ul li{ position:relative;}
+.mainarea .shoppingPk .box .pkBlock ul li .win{ position:absolute; top:0; left:0; width:100%; height:auto; z-index:99;}
+
+
+.mainarea .shoppingPk .box .treasuryBlock{ display:block; padding:0; margin:0 auto 0 13px; float:left; width:520px; border:1px solid #6700bf; border-radius:10px; overflow:hidden;}
+.mainarea .shoppingPk .box .treasuryBlock h3{ display:block; padding:0; margin:0 auto; background-color:#6700bf;}
+.mainarea .shoppingPk .box .treasuryBlock .input{ display:block; padding:21px; margin:0 auto 1px auto; text-align:center;}
+.mainarea .shoppingPk .box .treasuryBlock .input .inputbar{display:inline-block; padding:0; margin:0 auto; width:330px; height:60px; border:2px solid #a0a0a0;font-size:22px; color:#a0a0a0; font-weight:bold; border-radius:0px;}
+.mainarea .shoppingPk .box .treasuryBlock .input a{ display:inline-block; margin-left:1%; width:110px; height:64px; line-height:58px; background-color:#6700bf; color:#fff; font-size:26px; text-align:center;}
+.mainarea .shoppingPk .box .treasuryBlock .input a img{ width:auto; height:64px;}
+.mainarea .shoppingPk .box .treasuryBlock .input a:hover{ background-color:#000;}
+
+
+
+
+
+
+/*超值1111組合商品*/
+.mainarea .commodityBlock{ display:block; padding:0; margin:0 auto;}
+.mainarea .commodityBlock img{ width:100%; height:auto;}
+.mainarea .commodityBlock ul{ overflow:hidden; width:1110px; margin:0 auto;}
+.mainarea .commodityBlock ul li{ float:left; width:350px; padding:10px; margin-bottom:10px; background-image:url(li_bg.png); background-repeat:no-repeat; background-position:center center;}
+.mainarea .commodityBlock ul li .top{ padding:10px;
+ -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;}
+.mainarea .commodityBlock ul li .top:hover{transform:scale(0.97); -webkit-transform:scale(0.97); -moz-transform:scale(0.97);}
+.mainarea .commodityBlock ul li .top a{ color:#fff;}
+.mainarea .commodityBlock ul li .top a p{ font-size:14px; line-height:18px; padding:10px 0 5px 0;}
+.mainarea .commodityBlock ul li .top a del{ display:block; font-size:14px; text-align:right;}
+.mainarea .commodityBlock ul li .down{} 
+.mainarea .commodityBlock ul li .down a{ display:block; margin:0 auto; width:75%;}
+.mainarea .commodityBlock ul li:nth-child(3){ background-image:none;}
+.mainarea .commodityBlock ul li:nth-child(6){ background-image:none;}
+
+/*注意事項*/
+.notes{ width:1190px; height:auto; padding:40px 1.8em; background:#000; color:#fff; margin:0 auto; text-align:left;}
+.notes h4{ font:bold 55px/36px "微軟正黑體", "Microsoft JhengHei", Arial; margin:0 0 30px 0;}
+.notes ul li{font:18px/1.5em "微軟正黑體", "Microsoft JhengHei", Arial; margin:10px 0 10px 15px; list-style-type:disc;}
+.notes ul li a{ color:#FFF; text-decoration:underline;}
+.notes ul li a:hover{ color:#FF0;}
+
+/*浮層嘿嘿*/
+.blackBox { display:none;}
+.blackBox a{ text-decoration:none;}
+.blackBox_play { z-index:9999; position:fixed; top:0px; left:0px; width:100%; height:100%; background-color: rgba(34,34,34,0.75);}
+
+/*浮層基本*/
+.blackBox .box .button {  border-top:0px solid #d6d6d6; text-align:center; font-size:1.25rem; line-height:3.5rem; font-weight:bold;}
+.blackBox .box .but-close { clear:both; width:100%;}
+.blackBox .box .but-close a { display:block; color:#333;}
+.blackBox .box h3 span.close { position:absolute; top:6px; right:5px; display:block; border:2px solid #333; border-radius:0 0 5px 5px; width:63px; height:33px; font-size:1rem; line-height:2rem; text-align:center;}
+.blackBox .box h3 span.close a { display:inline-block; width:100%; height:100%; color:#333;}
+
+
+/*通知浮層*/
+.agreeArea { position:relative; top:5%; margin:0 auto 30px; width:94%; max-width:600px;}
+.agreeArea .box { border-radius:10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color:#fff; overflow:hidden;}
+.agreeArea .box h3 { height:3rem; font-size:1.25rem; font-weight:800;line-height:3rem; text-align:center; color:#333; background-color:#ffd710;}
+.agreeArea .box p { margin:0 auto; margin-top:1rem; padding:0px; width:86%;}
+.agreeArea .box p b { display:block; padding-bottom:0px;}
+.agreeArea .box p span { }
+.agreeArea .box .qrcodeimg { text-align:center; }
+.agreeArea .box .qrcodeimg a { color:#006afe;}
+.agreeArea .box .qrcodeimg img { width:100%; height:auto;}
+.agreeArea .box .agree_table table { margin:20px auto; border-collapse:collapse; width:90%; text-align:center;}
+.agreeArea .box .agree_table th { padding:5px; border:1px solid #CCC; width:33%; background:#CCC; font-size:0.9em; }
+.agreeArea .box .agree_table td { padding:5px; border:1px solid #CCC; font-size:0.9em; }
+
+.blackBox .box .box_aa .con{ position:relative; width:100%;}
+.blackBox .box .box_aa .con .left{ position:absolute; bottom:10%; left:12%;}
+.blackBox .box .box_aa .con .right{ position:absolute; bottom:10%; right:12%;}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0;}
+/*基本*/
+body {margin:0; padding:0;}
+
+/*全BOX版面*/
+.WRAPPER {display:inline-block; margin:0; padding:0; width:100%;}
+.WRAPPER img {border:0; vertical-align:top;}
+
+.WRAPPER .mainArea {display:block; margin:0 auto; width:1220px; z-index:1; font-family:"Century Gothic", "微軟正黑體", sans-serif;}
+
+.mainArea_content{ width:1100px;  margin:0 auto; text-align:justify; overflow:hidden; padding-bottom:15px; margin-bottom:100px;}
+.mainArea_content dt{padding-left:18px; font-size:30px; font-weight:bold; color:#ff5454;letter-spacing:-1px; background-image:url(dtimg.jpg); background-repeat:no-repeat; background-position:0px 15px; border-bottom:5px solid #d7d7d7; }
+.mainArea_content dd{margin-top:10px; margin-left:20px; margin-bottom:30px; font-size:20px; font-weight:500;letter-spacing:1px; color:#636363;}
+.mainArea_content .red{ display:block; width:145px; height:35px; background-color:#ff5454; color:#FFF; font-size:24px; font-weight:bold; text-align:center; line-height:35px; border-radius:8px;margin-top:20px; margin-left:20px; margin-bottom:10px;}
+.mainArea_content p{ font-size:20px; line-height:40px; color:#636363; text-indent:50px; margin-left:32px; letter-spacing:1px;}
+.mainArea_content p .smaill{font-size:14px; color:#636363;}
+.mainArea_content p a{font-size:20px; color:#ff5454;}
+.mainArea_content ul{ list-style:none; margin-top:50px;}
+.mainArea_content ul a{ text-decoration:none;}
+.mainArea_content ul li { float:left; width:510px; height:105px;margin-left:34px; border-radius:15px; text-align:center; line-height:105px; font-size:58px; color:#FFF; font-weight:bold; background-color:#fe5957; background-image:repeating-linear-gradient(45deg, hsla(0,0%,100%,.1),hsla(0,0%,100%,.1) 10px,transparent 0,transparent 20px);box-shadow:4px 3px 0px #c2c2c2; -webkit-box-shadow:4px 3px 0px #c2c2c2; -moz-box-shadow:4px .px 0px #c2c2c2; }
+.mainArea_content ul li:hover{ box-shadow:inset 4px 3px 0px #c2c2c2; -webkit-box-shadow:inset 4px 3px 0px #c2c2c2; -moz-box-shadow:inset 4px .px 0px #c2c2c2; color:#fffe86;}
+
+@media screen and ( max-width:736px) {
+.WRAPPER .mainArea {width:100%;}	
+.WRAPPER .mainArea .aa img{ width:100%; height:auto;}	
+.mainArea_content{width:100%;margin-bottom:40px;}
+.mainArea_content dt{ font-size:26px; margin-left:3%;}
+.mainArea_content p{ width:88%;margin-left:7%;}
+.mainArea_content ul{ list-style:none; margin-top:10px;}
+.mainArea_content ul li{ float:none;width:85%;font-size:30px;height:90px; line-height:90px; margin-top:20px;margin-left:7%;}	
+}
